@@ -6,6 +6,7 @@ const Footer = () => {
     return (
     <>
         <div>Footer</div>
+        <p>Im done</p>
         <img src={FooterImage} alt="footer" />
     </>
     )
