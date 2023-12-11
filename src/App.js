@@ -14,7 +14,7 @@ import mockDogs from "./mockDogs"
 
 
 const App = () => {
-  const[dogs, setDogs] = useState(mockDogs)
+  // const[dogs, setDogs] = useState(mockDogs)
   
 
   
