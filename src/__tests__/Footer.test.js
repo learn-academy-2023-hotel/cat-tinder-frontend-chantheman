@@ -11,14 +11,6 @@ describe("<Footer />", () => {
       </BrowserRouter>
     )
   })
-//   it("renders a logo with a src and alt", () => {
-//     render(
-//       <BrowserRouter>
-//         <Footer />
-//       </BrowserRouter>
-//     )
-//     const logo = screen.getByRole("img")
-//     expect(logo).toHaveAttribute("src" ,"DogFooter.jpg")
-//     expect(logo).toHaveAttribute("alt", "Footer")
+
   })
   
