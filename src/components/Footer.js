@@ -6,8 +6,8 @@ const Footer = () => {
     return (
     <>
         <div>Footer</div>
-        <p>Im done</p>
-        <img src={FooterImage} alt="footer" />
+        <h3>Created By Chandler & Jean</h3>
+        
     </>
     )
 }
