@@ -1,10 +1,11 @@
 import React from "react"
-import { Card, CardBody, CardTitle, CardSubtitle, Button } from "reactstrap"
+import { Card, CardBody, CardTitle, CardSubtitle,  } from "reactstrap"
+import { NavLink } from "react-router-dom"
 
 
 
 const DogIndex = ({ dogs }) => (
-    <main className="dog-index-cards">
+    <div className="dog-index-cards">
       {dogs?.map((dog, index) => (
         <Card
           style={{
@@ -18,11 +19,14 @@ const DogIndex = ({ dogs }) => (
             <CardSubtitle className="mb-2 text-muted" tag="h6">
               Age: {dog.age}
             </CardSubtitle>
-            <Button>See More Details</Button>
+            <NavLink to={`/dogshow/${dog.id}`}      className="nav-link">
+              See More Details
+            </NavLink>
+            
           </CardBody>
         </Card>
       ))}
-    </main>
+    </div>
   );
   
 

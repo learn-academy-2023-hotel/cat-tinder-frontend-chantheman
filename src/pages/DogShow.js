@@ -3,12 +3,21 @@ import { useParams } from "react-router-dom"
 
 const DogShow = ({ dogs }) => {
     const { id } = useParams()
-    let currentDog = dog.find((dog) => dog.id === +id)
+    let currentDog = dogs?.find((dog) => dog.id === +id)
 
     return (
-        <>
-        <h3>Dog Show Page</h3>
-        </>
+        <main className="dog-show-cards">
+    {currentDog && (
+      <>
+        <img
+          alt={`profile of a DOG named ${currentDog.name}`}
+          src={currentDog.image}
+          className="dog-show-img"
+        />
+        <h4>more info here</h4>
+      </>
+    )}
+  </main>
     )
 }
 
