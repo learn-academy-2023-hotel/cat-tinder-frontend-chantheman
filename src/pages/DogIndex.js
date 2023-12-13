@@ -30,12 +30,4 @@ const DogIndex = ({ dogs }) => (
   );
   
 
-
-
-
-    
-
-    
-
-
 export default DogIndex
