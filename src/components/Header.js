@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom"
 import DogImage from "../assets/DogHeader.jpg"
 
 
+
 const Header = () => {
     return (
     <>
@@ -22,11 +23,19 @@ const Header = () => {
           Meet the Dogs
         </NavLink>
       </NavItem>
+
       <NavItem>
         <NavLink to="/dognew" className="nav-link">
           Add a New Dog
         </NavLink>
       </NavItem>
+
+      {/* <NavItem>
+        <NavLink to="/dogedit" className="nav-link">
+          Update a Dog
+        </NavLink>
+      </NavItem> */}
+
       <NavItem>
         <a
           target="blank"

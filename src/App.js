@@ -1,4 +1,4 @@
-    import React, { useState } from 'react';
+import React, { useState } from 'react';
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import DogEdit from "./pages/DogEdit";
@@ -19,12 +19,17 @@ const App = () => {
     console.log("created dog:", dog);
   };
 
+  const updateDog = (dog, id) => {
+    console.log("dog:",dog)
+    console.log("id:",id)
+  }
+
   return (
     <>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/dogedit" element={<DogEdit />} />
+        <Route path="/dogedit/:id" element={<DogEdit dogs={dogs} updateDog={updateDog} />} />
         <Route path="/dogindex" element={<DogIndex dogs={dogs} />} />
         <Route path="/dognew" element={<DogNew createDog={createDog} />} />
         <Route path="/dogshow/:id" element={<DogShow dogs={dogs} />} />
