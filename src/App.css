@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+text-align: center;
 }
 
 .App-logo {
@@ -42,13 +42,13 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-.dog-show-img{
+.dog-show-img {
   display: grid;
-  max-width: 100%; 
+  max-width: 100%;
   width: auto;
   height: auto;
   place-items: center;
-  margin-left:  20%; ;
+  margin-left: 20%;
 }
 
 .card {
@@ -69,54 +69,52 @@
   background-color: #f0f2f6;
   text-align: center;
   padding: 5px;
-  }
-  
-  .dog-show-cards {
-    display: flexbox;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .dog-show-container {
+}
+
+.dog-show-cards {
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.dog-show-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center; 
+  text-align: center;
   border-radius: 10px;
-  }
-  
+}
 
-  
-  .header-nav {
-    background-color: #f0f2f6 ;
-    padding: 15x;
-    justify-content: center;
-    margin: 0 auto;
-    height: px;
-  }
-  
-  .header-nav a {
-    color:black;
-  }
-  
-  .header-nav a:hover {
-    color: white;
-    justify-content: center;
-  }
-  
-  .banner-section {
-    background-color: aqua;
-    text-align: center;
-    padding: 20px;
-    margin-top: 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .banner-section h1 {
-    margin: 0;
-  }
-  
+.header-nav {
+  background-color: #f0f2f6;
+  padding: 15x;
+  justify-content: center;
+  margin: 0 auto;
+  height: px;
+}
+
+.header-nav a {
+  color: black;
+}
+
+.header-nav a:hover {
+  color: white;
+  justify-content: center;
+}
+
+.banner-section {
+  background-color: aqua;
+  text-align: center;
+  padding: 20px;
+  margin-top: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.banner-section h1 {
+  margin: 0;
+}
+
 .page-container {
   background-size: cover;
   background-repeat: no-repeat;
@@ -128,12 +126,10 @@
 
 .home-page {
   background-image: url("assets/DogTinder.jpg");
-  
 }
 
-
 .index-page {
-  background-image: url("assets/DogTinder.jpg")
+  background-image: url("assets/DogTinder.jpg");
 }
 
 .dog-index-cards {
@@ -148,55 +144,49 @@
 .button1 {
   background-color: #61dafb;
   border: none;
-  padding: 4px ;
+  padding: 4px;
   margin: 0 10px;
   cursor: pointer;
   border-radius: 10px;
-
 }
 .button2 {
   background-color: #61dafb;
   color: white;
   border: none;
-  padding: 4px ;
+  padding: 4px;
   margin: 0 10px;
   cursor: pointer;
   border-radius: 10px;
-
 }
 .button3 {
   background-color: #61dafb;
   color: white;
   border: none;
-  padding: 4px ;
+  padding: 4px;
   margin: 0 10px;
   cursor: pointer;
   border-radius: 10px;
-
 }
 .button4 {
   background-color: #61dafb;
   color: white;
   border: none;
-  padding: 4px ;
+  padding: 4px;
   margin: 0 10px;
   cursor: pointer;
   border-radius: 10px;
-  
-
 }
 
 .dog-show-buttons {
   display: flex;
 }
 
-
 .button-show1,
 .button-show2 {
   background-color: #61dafb;
   color: black;
   border: none;
-  padding: 4px ;
+  padding: 4px;
   cursor: pointer;
   border-radius: 10px;
   margin-right: 10px;
@@ -210,7 +200,6 @@
   justify-content: center;
   text-align: center;
 }
-
 
 .image-container img {
   max-width: 100%; /* Ensure the image doesn't exceed its container */
@@ -260,8 +249,8 @@
 }
 
 .form-label-custom2 {
-  max-width: 600px; /* Adjust the width according to your design */
-  margin: 20px auto; /* Add margin for spacing and center the form horizontally */
+  max-width: 600px; 
+  margin: 20px auto; 
 }
 
 .form-label-custom2 .form-group {
