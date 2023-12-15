@@ -1,53 +1,48 @@
-import React from "react"
-import { Nav, NavItem } from "reactstrap"
-import { NavLink } from "react-router-dom"
-import DogImage from "../assets/DogHeader.jpg"
-
-
+import React from "react";
+import { Nav, NavItem } from "reactstrap";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
-    return (
+  return (
     <>
-        <Nav className="header-nav">
-      <NavItem>
-        <NavLink to="/">
-          <img
-            src={DogImage}
-            alt="header"
-            className="dog-logo"
-          />
-        </NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink to="/dogindex" className="nav-link">
-          Meet the Dogs
-        </NavLink>
-      </NavItem>
+      <Nav className="header-nav">
+        <NavItem>
+          <button className="button1">
+            <NavLink to={"/"} className="nav-link">
+              Home
+            </NavLink>
+          </button>
+        </NavItem>
 
-      <NavItem>
-        <NavLink to="/dognew" className="nav-link">
-          Add a New Dog
-        </NavLink>
-      </NavItem>
+        <NavItem>
+          <button className="button2">
+            <NavLink to={"/dogindex"} className="nav-link">
+              Meet the Dogs
+            </NavLink>
+          </button>
+        </NavItem>
 
-      {/* <NavItem>
-        <NavLink to="/dogedit" className="nav-link">
-          Update a Dog
-        </NavLink>
-      </NavItem> */}
+        <NavItem>
+          <button className="button3">
+            <NavLink to={"/dognew"} className="nav-link">
+              Add a New Dog
+            </NavLink>
+          </button>
+        </NavItem>
 
-      <NavItem>
-        <a
-          target="blank"
-          href="https://www.aspca.org/"
-          className="nav-link"
-        >
-          Adopt a Dog!
-        </a>
-      </NavItem>
-    </Nav>
-
+        <NavItem>
+          <button className="button4">
+            <a
+              target="blank"
+              href="https://www.aspca.org/"
+              className="nav-link"
+            >
+              Adopt a Dog?
+            </a>
+          </button>
+        </NavItem>
+      </Nav>
     </>
-    )
-}
-export default Header
+  );
+};
+export default Header;
