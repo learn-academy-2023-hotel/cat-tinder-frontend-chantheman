@@ -1,15 +1,15 @@
-import React from "react"
-import { Card, CardBody, CardTitle, CardSubtitle,  } from "reactstrap"
-import { NavLink } from "react-router-dom"
+import React from "react";
+import { Card, CardBody, CardTitle, CardSubtitle } from "reactstrap";
+import { NavLink } from "react-router-dom";
 
-
-
-const DogIndex = ({ dogs }) => (
-    <div className="dog-index-cards">
-      {dogs?.map((dog, index) => (
-        <Card
+const DogIndex = ({ dogs }) => {
+    return (
+  <main className="dog-index-cards">
+    {dogs?.map((dog, index) => {
+      return (
+      <Card
           style={{
-            width: "14rem"
+            width: "14rem",
           }}
           key={index}
         >
@@ -19,15 +19,15 @@ const DogIndex = ({ dogs }) => (
             <CardSubtitle className="mb-2 text-muted" tag="h6">
               Age: {dog.age}
             </CardSubtitle>
-            <NavLink to={`/dogshow/${dog.id}`}      className="nav-link">
+            <NavLink to={`/dogshow/${dog.id}`} className="nav-link">
               See More Details
             </NavLink>
-            
           </CardBody>
         </Card>
-      ))}
-    </div>
-  );
-  
+    )
+        })}
+  </main>
+  )
+}
 
 export default DogIndex

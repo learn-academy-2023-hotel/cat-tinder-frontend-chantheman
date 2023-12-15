@@ -17,14 +17,14 @@ const DogEdit = ({ dogs, updateDog }) => {
         setEditDog({ ...editDog, [e.target.name]: e.target.value})
     } 
     const navigate = useNavigate()
-     
+
     const handleSubmit = () => {
         updateDog(editDog, currentDog.id)
         navigate("/dogindex")
     }
-  
+
     return (
-        <Form>
+        <Form className="form-label-custom2">
             <FormGroup>
                 <Label for="name">Name</Label>
                 <Input 
@@ -33,7 +33,7 @@ const DogEdit = ({ dogs, updateDog }) => {
                 name="name"
                 onChange={handleChange}
                 value={editDog.name}
-                 />
+                />
             </FormGroup>
             <FormGroup>
                 <Label for="age">Age</Label>
@@ -56,17 +56,20 @@ const DogEdit = ({ dogs, updateDog }) => {
                 />
             </FormGroup>
             <FormGroup>
-               <Label for="image">Image URL</Label>
-               <Input 
-               type="text" 
-               id="image"
-               name="image"
-               onChange={handleChange}
+                <Label for="image">Image URL</Label>
+                <Input 
+                type="text" 
+                id="image"
+                name="image"
+                onChange={handleChange}
                 value={editDog.image} 
-               />
+                />
             </FormGroup>
-        <Button onClick={handleSubmit} name="Submit">Submit Updated 
-        Dog</Button>
+
+        
+        <button className="sub-button2" onClick={handleSubmit} name="Submit">Submit Updated 
+        Dog</button>
+        
         </Form>
     )
 }
