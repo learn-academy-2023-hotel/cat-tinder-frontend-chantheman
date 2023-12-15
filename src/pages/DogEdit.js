@@ -3,7 +3,7 @@ import { Form, FormGroup, Input, Label, Button } from "reactstrap"
 import { useNavigate, useParams } from "react-router-dom"
 
 const DogEdit = ({ dogs, updateDog }) => {
-const { id } = useParams();
+const { id } = useParams()
 let currentDog = dogs?.find((dog) => dog.id === +id)
 
 const [editDog, setEditDog] = useState({
@@ -27,41 +27,41 @@ return (
     <FormGroup>
         <Label for="name">Name</Label>
         <Input
-        type="text"
-        id="name"
-        name="name"
-        onChange={handleChange}
-        value={editDog.name}
+            type="text"
+            id="name"
+            name="name"
+            onChange={handleChange}
+            value={editDog.name}
         />
     </FormGroup>
     <FormGroup>
         <Label for="age">Age</Label>
         <Input
-        type="number"
-        id="age"
-        name="age"
-        onChange={handleChange}
-        value={editDog.age}
+            type="number"
+            id="age"
+            name="age"
+            onChange={handleChange}
+            value={editDog.age}
         />
     </FormGroup>
     <FormGroup>
         <Label for="enjoys">Enjoys</Label>
         <Input
-        type="text"
-        id="enjoys"
-        name="enjoys"
-        onChange={handleChange}
-        value={editDog.enjoys}
+            type="text"
+            id="enjoys"
+            name="enjoys"
+            onChange={handleChange}
+            value={editDog.enjoys}
         />
     </FormGroup>
     <FormGroup>
         <Label for="image">Image URL</Label>
         <Input
-        type="text"
-        id="image"
-        name="image"
-        onChange={handleChange}
-        value={editDog.image}
+            type="text"
+            id="image"
+            name="image"
+            onChange={handleChange}
+            value={editDog.image}
         />
     </FormGroup>
 
@@ -71,4 +71,4 @@ return (
     </Form>
 )
 }
-export default DogEdit
+export default DogEdit;
